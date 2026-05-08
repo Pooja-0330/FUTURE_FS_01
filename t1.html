@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poojasri Portfolio</title>
+  <link rel="stylesheet" href="t1.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">Poojasri</h2>
+
+    <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <div id="home" class="content-section">
+
+    <div class="card">
+        <h1>Hi, I'm Poojasri 👋</h1>
+
+        <p class="role">
+            Web Developer | CSE Student
+        </p>
+
+        <div class="buttons">
+            <a href="https://github.com/Pooja-0330" target="_blank" class="btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/pooja-adari-739bb9328" target="_blank" class="btn">LinkedIn</a>
+            <a href="resume.pdf" target="_blank" class="btn">Resume</a>
+        </div>
+    </div>
+
+</div>
+<div id="about" class="content-section" style="display:none;">
+
+    <div class="card">
+        <h1>About Me</h1>
+
+        <p>
+            Hi, I'm Adari Poojasri.
+            I am a passionate Web Developer and CSE student.
+        </p>
+        <p>
+            <p>I am currently learning Full Stack Developmentand building projects using HTML, CSS, JavaScript and Python.</p>
+        </p>
+    </div>
+
+</div>
+<div id="projects" class="content-section" style="display:none;">
+
+    <div class="project-box">
+
+        <h2>Projects</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Calculator</h3>
+                <p>JavaScript based calculator project.</p>
+            </div>
+
+            <div class="card">
+                <h3>To-Do App</h3>
+                <p>Task manager using HTML, CSS and JS.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div id="contact" class="content-section" style="display:none;">
+
+    <div class="card">
+
+        <h1>Contact Me</h1>
+
+        <p>Email: poojasri@gmail.com</p>
+
+        <p>Phone: +91 9492158212</p>
+
+        <p>Location: Andhra Pradesh, India</p>
+    </div>
+</div>
+<script>
+function showSection(sectionId) {
+
+    let sections = document.querySelectorAll('.content-section');
+
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    document.getElementById(sectionId).style.display = 'flex';
+}
+showSection('home');
+</script>
+</body>
+</html>
