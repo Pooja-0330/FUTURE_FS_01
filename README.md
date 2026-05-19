@@ -5,7 +5,7 @@ This is my personal professional portfolio website created as part of my Full St
 ---
 
 # 🚀 Live Website
-http://127.0.0.1:5500/t1.html
+https://pooja-0330.github.io/FUTURE_FS_01/
 
 ---
 
